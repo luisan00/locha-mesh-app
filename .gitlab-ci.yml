@@ -9,4 +9,4 @@ before_script:
 job:
   stage: test
   script: "platformio ci -C Turpial/platformio.ini  -l Turpial/lib/ --board=heltec_wifi_lora_32"
-  variables: {PLATFORMIO_CI_SRC: "Turpial/src/Turpial.ino"}
+  variables: {PLATFORMIO_CI_SRC: "Turpial/src/*"}
