@@ -4,6 +4,7 @@
    for a full text.
 */
 
+#include <Arduino.h>
 #include "defaultStartup.h"
 
 SCR_status_t  SCRStatus;
@@ -11,6 +12,10 @@ BLE_status_t  BLEStatus;
 WST_status_t  WSTStatus;
 WAP_status_t  WAPStatus;
 RAD_status_t  RADStatus;
+
+int screent_int();
+
+void xTaskCreate();
 
 void setup() {
   Serial.begin(115200);
