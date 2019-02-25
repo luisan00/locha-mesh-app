@@ -6,6 +6,27 @@
 #ifndef SCREEN_H_
 #define SCREEN_H_
 
+
+/* 
+Aqui defines las funciones, clases etc a las que quieres hacer referencia
+cuando haces un include (import en python, require en JS) desde otro punto de la aplicación.
+.....por ejemplo iniciar la pantalla:
+
+bool screen_init();
+
+posteriormente si lo quieres usar en Turpial.cpp, pones en la cabecera del mismo:
+
+#include <screen.h>
+
+y tienes acceso a toooodo este archivo.
+#define 
+
+
+*/
+
+bool screen_init();
+
+
 // BLE_img
 #define BLE_width   8
 #define BLE_height  10
