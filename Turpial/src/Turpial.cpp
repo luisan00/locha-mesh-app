@@ -18,7 +18,10 @@ esta seria una opcion:
 llamas a una funcion externa sin importar por completo
 el archivo de cabecera.
 
-extern int screent_int();
+hay q escribirla tal cual, especificando el tipo de valor a devolver
+y los parametros que requiera:
+
+extern bool screent_int();
 extern void bluetooth_task(void *params);
 
 */
