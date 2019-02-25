@@ -13,9 +13,15 @@ WST_status_t  WSTStatus;
 WAP_status_t  WAPStatus;
 RAD_status_t  RADStatus;
 
-int screent_int();
+/*
+esta seria una opcion:
+llamas a una funcion externa sin importar por completo
+el archivo de cabecera.
 
-void xTaskCreate();
+extern int screent_int();
+extern void bluetooth_task(void *params);
+
+*/
 
 void setup() {
   Serial.begin(115200);
